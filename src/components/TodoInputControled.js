@@ -1,4 +1,4 @@
-const TodoInputControled = ({ handleSubmit, handleChange, value }) => {
+const TodoInputControlled = ({ handleSubmit, handleChange, value }) => {
 	return (
 		<form onSubmit={handleSubmit}>
 			<label>Controled input:</label>
@@ -8,4 +8,4 @@ const TodoInputControled = ({ handleSubmit, handleChange, value }) => {
 	)
 }
 
-export default TodoInputControled
+export default TodoInputControlled

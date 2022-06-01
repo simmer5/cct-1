@@ -5,7 +5,7 @@ import TodoList from './components/TodoList'
 import './App.css'
 
 function App() {
-	const inputRef = useRef()
+	const inputRef = useRef(null)
 	const [todoes, setTodoes] = useState([])
 	const [todo, setTodo] = useState('')
 
@@ -16,7 +16,8 @@ function App() {
 	}
 	const handleUncontroledInput = e => {
 		e.preventDefault()
-		setTodoes(prev => [...prev, inputRef.current.value])
+		const newTodo = inputRef.current.value
+		setTodoes(prev => [...prev, newTodo])
 		inputRef.current.value = ''
 	}
 

@@ -1,13 +1,13 @@
 import React from 'react'
 
-const TodoInputUncontroled = ({ inputRef, uncontroledSubmit }) => {
+const TodoInputUncontrolled = ({ inputRef, uncontroledSubmit }) => {
 	return (
 		<form onSubmit={uncontroledSubmit}>
-			<label>Uncontroled input:</label>
+			<label>Uncontrolled input:</label>
 			<input ref={inputRef} />
 			<button type='submit'>Add todo </button>
 		</form>
 	)
 }
 
-export default TodoInputUncontroled
+export default TodoInputUncontrolled
